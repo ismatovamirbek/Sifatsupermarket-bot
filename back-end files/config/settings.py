@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.append(os.path.join(BASE_DIR, 'apps'))
 # ENV = dotenv_values(os.path.join(BASE_DIR, '.env'))
 
-SECRET_KEY = 'django-insecure-ye5i3^8&&=2h-uzxwj+ei6fumdsysx&h-8$ipxxs(#guf^6n5e'
+SECRET_KEY = '' # Secret key
 
 DEBUG = True
 
