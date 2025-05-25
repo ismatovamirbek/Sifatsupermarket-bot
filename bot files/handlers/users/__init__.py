@@ -7,4 +7,3 @@ from . import bin
 from . import about_us
 from . import help
 from . import start
-# from . import echo

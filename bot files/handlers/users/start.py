@@ -6,10 +6,11 @@ from aiogram.dispatcher.filters import CommandStart
 from data.config import API_URL, ADMINS
 from loader import dp
 from keyboards.default.menu_buttons import show_user_menu, show_admin_menu
+from filters.private_filter import IsPrivate
 
 
 # Botda foydalanuvchi /start tugmasini bosganda apiga saqlanadi
-@dp.message_handler(CommandStart())
+@dp.message_handler(CommandStart(), IsPrivate())
 async def bot_start(message: types.Message, state: FSMContext):
     user = message.from_user
 
